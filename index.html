@@ -1,0 +1,114 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+</head>
+
+<body>
+
+    <!-- Here goes code for top title bar that contains draggable title and buttons-->
+    <div id="topbar">
+        <div id="draggable-area">
+            <img id="logo_stocky" src="../icons/logo_stocky.svg" alt="logo icon">
+        </div>
+        <!-- minimize , maximize , close buttons-->
+        <div id="topOptions">
+            <img id="minimize_btn" src="../icons/minimize.svg" alt="minimize btn" />
+            <img id="close_btn" src="../icons/close.svg" alt="close btn" />
+        </div>
+    </div>
+
+    <!--login page & registration page-->
+    <div id="fullScreenCover">
+
+        <!--All fields and inputs for login-->
+        <div id="login_card" style="display: block;">
+            <p id="welcome_content">Welcome back!</p>
+            <p id="excited_see_content">We're so excited to see you again!</p>
+            <p id="email_label" class="label_inputs">EMAIL</p>
+            <input id="email_input" type="email" placeholder="someone@email.com" class="input_box" />
+            <p id="password_label" class="label_inputs">PASSWORD</p>
+            <input id="password_input" type="password" placeholder="********" class="input_box" />
+            <img id="password_visibility_login" src="../icons/eye_on.svg" alt="visibility off" class="input_icon"/>
+            <p id="password_forget">Forgot your password?</p>
+            <button id="log_in_btn" class="btn_input">Login</button>
+            <p id="need_account">Need an account?<span>Register</span></p>
+        </div>
+
+        <!--email recovery for forget password-->
+        <div id="forget_password_card" style="display: none;">
+            <p id="forget_label">Forget password?</p>
+            <p id="forget_label2"> No worry, we will help you recover </p>
+            <p id="email_forget_label" class="label_inputs">EMAIL</p>
+            <input id="email_forget_input" type="email" placeholder="someone@email.com" class="input_box" />
+            <button id="recover_btn" class="btn_input">Recover</button>
+            <p id="account_exist">Remembered? <span>LogIn</span></p>
+        </div>
+
+        <!-- All fields and inputs for registration-->
+        <div id="registration_card" style="display: none;">
+            <p id="register_label">Create an account</p>
+            <p id="email_reg_label" class="label_inputs">EMAIL</p>
+            <input id="email_reg_input" type="email" placeholder="someone@email.com" class="input_box" />
+            <p id="username_reg_label" class="label_inputs">USERNAME</p>
+            <input id="username_reg_input" type="text" placeholder="@" class="input_box" />
+            <p id="password_reg_label" class="label_inputs">PASSWORD</p>
+            <input id="password_reg_input" type="password" placeholder="********" class="input_box" />
+            <img id="password_visibility_reg" src="../icons/eye_on.svg" alt="visibility off" class="input_icon"/>
+            <p id="date_reg_label" class="label_inputs">DATE OF BIRTH</p>
+            <select id="dob_Y_reg_input" class="date_inputs">
+            </select>
+            <select id="dob_M_reg_input" class="date_inputs">
+                <option value="1">January</option>
+                <option value="2">Febraury</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
+            <select id="dob_D_reg_input" class="date_inputs">
+               
+            </select>
+            <button id="continue_btn" class="btn_input">Continue</button>
+            <p id="already_account">Already have an account?</p>
+            <p id="term_condition">By registering you agree to stocky’s <span>Terms of Service</span> and <span>Privacy Policy.</span></p>
+        </div>
+
+        <!--Display a pop up message for form validation and response-->
+        <div id="messagePop" style="display:none;">
+            Some message here
+        </div>
+
+        <!--Show if app is online/offline-->
+        <div id="offline_status" style="display: none;">
+            <h1>Connect to the internet</h1>
+            <p>You are offline. Check your connection</p>
+        </div>
+
+        <div id="Privacy-Policy" style="display: none;">
+            <img id="close_privacy_policy" src="../icons/close.svg" alt="close_privacy_policy"/>
+            <object data="../objects/privacy_pol.html" type="text/html"></object>
+        </div>
+
+        <div id="email_verification_sent" style="display: none;">
+            <h1>Email verification sent successfully</h1>
+            <p>Kindly check your mailbox. Search in all the folders including spam and junk</p>
+            <button id="login_again" class="btn2_input">Verified ? Login</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
