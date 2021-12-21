@@ -45,7 +45,7 @@ body{
 #fullScreenCover{
     width: 100%;
     height: calc(100% - 40px);
-    background-image: url('../icons/login/login_background.png');
+    background-image: url('icons/login/login_background.png');
     background-repeat: no-repeat;
     background-size: cover;
 }

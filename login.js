@@ -286,14 +286,14 @@ window.addEventListener("DOMContentLoaded", () => {
     toogleBtn.addEventListener("click", () => {
       if (inputfield.getAttribute("type") == "text") {
         inputfield.setAttribute("type", "password");
-        toogleBtn.setAttribute("src", "../icons/eye_on.svg");
+        toogleBtn.setAttribute("src", "icons/eye_on.svg");
         setTimeout(() => {
           inputfield.setAttribute("type", "text");
-          toogleBtn.setAttribute("src", "../icons/eye_off.svg");
+          toogleBtn.setAttribute("src", "icons/eye_off.svg");
         }, 60000);
       } else {
         inputfield.setAttribute("type", "text");
-        toogleBtn.setAttribute("src", "../icons/eye_off.svg");
+        toogleBtn.setAttribute("src", "icons/eye_off.svg");
       }
     });
   }
